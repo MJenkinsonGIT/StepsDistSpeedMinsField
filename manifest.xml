@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <iq:application
+        entry="StepsDistSpeedMinsApp"
+        id="C1D2E3F4A5B6C7D8E9F0A1B2C3D4E5F6"
+        launcherIcon="@Drawables.LauncherIcon"
+        minApiLevel="5.2.0"
+        name="@Strings.AppName"
+        type="datafield"
+        version="1.0.0">
+
+        <iq:products>
+            <iq:product id="venu3"/>
+        </iq:products>
+
+        <iq:permissions>
+            <!-- ActivityMonitor needs no permission -->
+        </iq:permissions>
+
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+
+    </iq:application>
+</iq:manifest>
