@@ -240,7 +240,7 @@ class StepsDistSpeedMinsView extends WatchUi.DataField {
                 var deltaMs = (newest[:time]   as Number) - (oldest[:time]   as Number);
                 speedMph = (deltaCm.toFloat() / (deltaMs.toFloat() + 1.0f)) * (3600000.0f / 160934.4f);
             }
-            _speedNum = speedMph.format("%.1f");
+            if (speedMph >= 0.0f) { _speedNum = speedMph.format("%.1f"); }
         } else {
             _speedNum = "0.0";
         }
